@@ -14,3 +14,4 @@ echo "Enter new Samba password: "
 read PASS
 echo -ne "$PASS\n$PASS\n" | smbpasswd -a -s $benutzername
 echo -e '\E[33;44m'"Samba setup done"; tput sgr0
+echo "Connect to \\[HOSTNAME]\Testsystem"
