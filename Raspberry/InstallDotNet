@@ -1,0 +1,9 @@
+cd /tmp
+
+mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-5.0.103-linux-arm64.tar.gz -C $HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+
+touch ~/.bashrc
+echo "export PATH=$PATH:$HOME/dotnet" >> ~/.bashrc
+echo "export DOTNET_ROOT=$HOME/dotnet" >> ~/.bashrc
