@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /tmp
 wget https://download.visualstudio.microsoft.com/download/pr/cd11b0d1-8d79-493f-a702-3ecbadb040aa/d24855458a90944d251dd4c68041d0b7/dotnet-sdk-5.0.103-linux-arm.tar.gz
-mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-5.0.103-linux-arm64.tar.gz -C $HOME/dotnet
+mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-5.0.103-linux-arm.tar.gz -C $HOME/dotnet
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 
